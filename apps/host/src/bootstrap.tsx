@@ -1,16 +1,20 @@
-import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-
-import App from './app/app';
+import { ChakraProvider } from '@chakra-ui/react';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import { fetcher } from './libs/axios';
+import { SWRConfig } from 'swr';
+import AppRoute from './AppRoute';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StrictMode>
+  <Provider store={store}>
+    <ChakraProvider>
+      <SWRConfig value={{ fetcher }}>
+        <AppRoute />
+      </SWRConfig>
+    </ChakraProvider>
+  </Provider>
 );

@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@web-builder/shared-components": ["libs/shared-components/src/index.ts"],
-      "@web-builder/umkm-theme-libs": ["libs/umkm-theme-libs/src/index.ts"]
+      "@satutema/umkm-theme-libs": ["libs/umkm-theme-libs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
