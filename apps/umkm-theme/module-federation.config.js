@@ -8,6 +8,11 @@ const moduleFederationConfig = {
   exposes: {
     './Module': './src/remote-entry.ts',
   },
+  shared: (name, config) => {
+    if (name === 'swr') {
+      return false;
+    }
+  },
 };
 
 module.exports = moduleFederationConfig;
