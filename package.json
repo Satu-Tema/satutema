@@ -2,7 +2,10 @@
   "name": "web-builder",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx serve host --devRemotes=umkm-theme",
+    "e2e": "cypress open"
+  },
   "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
