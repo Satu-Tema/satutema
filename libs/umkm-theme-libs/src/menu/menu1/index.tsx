@@ -1,35 +1,28 @@
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Heading,
-  useColorModeValue,
-  chakra,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, useColorModeValue } from '@chakra-ui/react';
 import MenuCard from '../../components/theme/MenuCard';
-import React, { useState } from 'react';
+import Food from './foodplaceholder.jpg';
+
 const Data = {
   main: [
     {
       title: 'Mini Zupa Soup',
       description: 'Berisi 4 mini zupa soup smokebeef',
-      image: `${process.env.PUBLIC_URL}/images/foodplaceholder.jpg`,
+      image: Food,
     },
     {
       title: 'Mini Lasagna',
       description: 'Berisi 4 mini beef lasagna',
-      image: `${process.env.PUBLIC_URL}/images/foodplaceholder.jpg`,
+      image: Food,
     },
     {
       title: 'Mini Mix',
       description: '1 Box berisi 2 mini zupa dan 2 mini lasagna',
-      image: `${process.env.PUBLIC_URL}/images/foodplaceholder.jpg`,
+      image: Food,
     },
     {
       title: 'Mini Mix',
       description: '1 Box berisi 2 mini zupa dan 2 mini lasagna',
-      image: `${process.env.PUBLIC_URL}/images/foodplaceholder.jpg`,
+      image: Food,
     },
   ],
 };
